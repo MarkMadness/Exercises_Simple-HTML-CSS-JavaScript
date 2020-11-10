@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTA Roundtable Challenge 4</title>
+    <style>
+        .main-container {
+            background-color: lightgrey;
+        }
+
+        button {
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>The Tech Academy Roundtable Challenge 4</h1>
+        <h2>Palindrome Check</h2>
+        <p>Given a string, return true if the string is a palindrome and false if it isn’t. Include spaces and punctuation in deciding if the string is a palindrome.</p>
+    </div>
+        
+    <div>
+        <form><input type='text' id='input' placeholder='Enter a string'></form>
+        <button type='button' onClick='checkPalindrome()'>Check if it's a palindrome</button>
+        <h3 id='answer'></h3>
+    </div>
+
+    <script>
+        function checkPalindrome(){
+            var string = document.getElementById('input').value.toLowerCase();
+            var reverse = string.split("").reverse().join("");
+            if (string === reverse) {
+                document.getElementById('answer').innerHTML = "Yes, the string is a palindrome!"
+            } else {
+                document.getElementById('answer').innerHTML = "No, the string is NOT a palindrome!"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTA Roundtable Challenge 2</title>
+    <style>
+        .form {
+            width: 15%;
+        }
+        input {
+            width: 100%;
+            margin: 15px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>The Tech Academy Roundtable Challenge 2</h1>
+        <h2>Pay with Pocket Change!</h2>
+        <p>Given a total due and an array representing the amount of change in your pocket, determine whether or 
+            not you are able to pay for the item. Change will always be represented in the following order: quarters, dimes, nickels, pennies.</p><br />
+    </div>
+    <div class='form'>
+        <form>
+        <label for='payment'>What is the payment amount?</label>
+        <input type='text' id='payment' name='payment'>
+        <label for='quarters'>How many quarters do you have?</label>
+        <input type='text' id='quarters' name='quarters'>
+        <label for='dimes'>How many dimes do you have?</label>
+        <input type='text' id='dimes' name='dimes'>
+        <label for='nickels'>How many nickels do you have?</label>
+        <input type='text' id='nickels' name='nickels'>
+        <label for='pennies'>How many pennies do you have?</label>
+        <input type='text' id='pennies' name='pennies'>
+        </form>
+    </div>
+    <div>
+        <button type='button' onClick="payWithChange()">Calculate!</button>
+        <h3>Do you have enough?</h3>
+        <p id='totalChange'></p>
+        <p id='finalAnswer'></p>
+    </div>
+
+    <script>
+        function payWithChange() {
+            var payment = document.getElementById('payment').value;
+            var quarters = document.getElementById('quarters').value;
+            var dimes = document.getElementById('dimes').value;
+            var nickels = document.getElementById('nickels').value;
+            var pennies = document.getElementById('pennies').value;
+
+            var totalQuarters = 0.25 * quarters;
+            var totalDimes = 0.1 * dimes;
+            var totalNickels = 0.05 * nickels;
+            var totalPennies = 0.01 * pennies;
+            var totalChange = totalDimes + totalDimes + totalNickels + totalPennies;
+            if(payment < totalChange){
+                document.getElementById('totalChange').innerHTML = 'Your total change is ' + totalChange;
+                document.getElementById('finalAnswer').innerHTML = 'Yes';
+            } else{
+                document.getElementById('totalChange').innerHTML = 'Your total change is ' + totalChange;
+                document.getElementById('finalAnswer').innerHTML = 'No';
+            }
+        }
+    </script>
+</body>
+</html>

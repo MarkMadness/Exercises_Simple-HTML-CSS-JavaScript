@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTA Roundtable Challenge 4</title>
+    <style>
+        .main-container {
+            background-color: lightgrey;
+        }
+
+        button {
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>The Tech Academy Roundtable Challenge 4</h1>
+        <h2>String reverse algorithm</h2>
+        <p>In language of choice, write a routine that reverses a string in place.</p>
+        <p>Example: reverseString("Hello, World")       output: dlroW ,olleH</p>
+    </div>
+    
+    <div>
+        <h3>Type in a string you want reversed</h3>
+        <form><input type='text' id='origin'></form>
+        <button type='button' onClick='newString()'>The new string is ...</a>
+        <h3 id='newString'></h3>
+    </div>
+
+    <script>
+        function newString() {
+            document.getElementById('newString').innerHTML = document.getElementById('origin').value.split("").reverse().join("");
+        }
+    </script>
+</body>
+</html>
