@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTA Roundtable Challenge 5</title>
+    <style>
+        .main-container {
+            background-color: lightgrey;
+        }
+
+        button {
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>The Tech Academy Roundtable Challenge 5</h1>
+        <h2>Find the Vowels</h2>
+        <p>Write a function that takes a string as argument and returns the number of vowels contained in that string.</p>
+    </div>
+
+    <div>
+        <form><input type='text' id='input' placeholder='Enter a string'></form>
+        <button type='button' onClick='findVowels()'>How many vowels does it have?</button>
+        <h3 id='vowelCount'></h3>
+    </div>
+
+    <script>
+        function findVowels() {
+            var str = document.getElementById('input').value.split("");
+            var count = 0;
+            for(var i=0;i<str.length;i++){
+                if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u") {
+                    count++;
+                }
+            }
+            document.getElementById('vowelCount').innerHTML = count;
+        }
+    </script>
+</body>
+</html>
