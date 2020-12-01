@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTA Algorithm 1</title>
+</head>
+<body>
+  <div>
+    <h1>The Tech Academy Algorithm Study Group 1</h1>
+    <h2>Object to String</h2>
+    <p>Given an object, return it as a string.</p>
+    <p>Example: object = {a:1, b:2, c:3, d:4, e:5} -> "a1b2c3d4e5"</p><br />
+  </div>
+
+  <div>
+    <p id='demo'></p>
+  </div>
+
+  <script>
+    function myFunction() {
+      var dictionary = {
+        a: 1,
+        b: 2,
+        c: 3,
+        d: 4,
+        e: 5
+      }
+
+      var stringArray = [];
+      var x = 0;
+      for(var prop in dictionary){
+        stringArray[x] = (`${prop}${dictionary[prop]}`);
+        x++;
+      }
+        document.getElementById('demo').innerHTML = stringArray.join('');
+    }
+
+    myFunction();
+  </script>
+</body>
+</html>
+
