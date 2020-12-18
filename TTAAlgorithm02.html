@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTA Algorithm 2</title>
+</head>
+<body>
+    <div>
+        <h1>The Tech Academy Algorithm Study Group 2</h1>
+        <h2>Check Anagrams</h2>
+        <p>Given two strings, return true if string 1 and string 2 are anagrams.</p>
+    </div>
+
+    <div>
+        <h2>Enter two strings</h2>
+        <form>
+            <label name='firstStr'></label>
+            <input type='text' name='firstStr' id='firstStr'>
+            <label name='secondStr'></label>
+            <input type='text' name='secondStr' id='secondStr'>
+            <button type='button' onclick="checkAnagrams()">Are they Anagrams?</button>
+        </form>
+        <p id='result'></p>
+    </div>
+
+    <script>
+        function checkAnagrams() {
+            var str1 = document.getElementById('firstStr').value;
+            var str2 = document.getElementById('secondStr').value;
+            if(str1.length == str2.length){
+            var arrayOne = str1.split("").sort();
+            var arrayTwo = str2.split("").sort();
+                var count = 0;
+            for(var i = 0;i<arrayOne.length;i++){
+                if(arrayOne[i] == arrayTwo[i]){
+                count++;
+            }
+            }
+            if(count === arrayOne.length){
+                document.getElementById('result').innerHTML = 'Yes, they are anagrams!';
+            } else {
+                document.getElementById('result').innerHTML = 'No, they are not anagrams.';
+            }
+        } else {
+            document.getElementById('result').innerHTML = 'No, they are not anagrams.';
+        }
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
