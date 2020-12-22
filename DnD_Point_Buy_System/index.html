@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Point Buy System</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    
+
+    <div id='main-container'>
+        <div id='secondary-container'>
+            <h1>Point Buy System</h1>
+            <h2>Mark's D&D Game</h2>
+
+            <div class='headers'>
+                <h3>Build your character's stats:</h3>
+                <h3 id='points-remaining'>20</h3>
+                <h4 id='notify'>-</h4>
+            </div>
+    
+            <!-- Strength section -->
+            <div class='stat-section'>
+                <label name='STR' id='STR' class='stat-content'>Strength:</label>
+                <div class='p-container'>
+                    <p id='STR-p' class='stat-content'>5</p>
+                </div>
+                <div class='arrows stat-content'>
+                    <div class='arrow-button' onclick='plusStat("STR-p")'>
+                        <div class='arrow arrow-up'></div>
+                    </div>
+                    <div class='arrow-button' onclick='minusStat("STR-p")'>
+                        <div class='arrow arrow-down'></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dexterity section -->
+            <div class='stat-section'>
+                <label name='DEX' id='DEX' class='stat-content'>Dexterity:</label>
+                <div class='p-container'>
+                    <p id='DEX-p' class='stat-content'>5</p>
+                </div>
+                <div class='arrows stat-content'>
+                    <div class='arrow-button' onclick='plusStat("DEX-p")'>
+                        <div class='arrow arrow-up'></div>
+                    </div>
+                    <div class='arrow-button' onclick='minusStat("DEX-p")'>
+                        <div class='arrow arrow-down'></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Constitution section -->
+            <div class='stat-section'>
+                <label name='CON' id='CON' class='stat-content'>Constitution:</label>
+                <div class='p-container'>
+                    <p id='CON-p' class='stat-content'>5</p>
+                </div>
+                <div class='arrows stat-content'>
+                    <div class='arrow-button' onclick='plusStat("CON-p")'>
+                        <div class='arrow arrow-up'></div>
+                    </div>
+                    <div class='arrow-button' onclick='minusStat("CON-p")'>
+                        <div class='arrow arrow-down'></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intelligence section -->
+            <div class='stat-section'>
+                <label name='INT' id='INT' class='stat-content'>Intelligence:</label>
+                <div class='p-container'>
+                    <p id='INT-p' class='stat-content'>5</p>
+                </div>
+                <div class='arrows stat-content'>
+                    <div class='arrow-button' onclick='plusStat("INT-p")'>
+                        <div class='arrow arrow-up'></div>
+                    </div>
+                    <div class='arrow-button' onclick='minusStat("INT-p")'>
+                        <div class='arrow arrow-down'></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wisdom section -->
+            <div class='stat-section'>
+                <label name='WIS' id='WIS' class='stat-content'>Wisdom:</label>
+                <div class='p-container'>
+                    <p id='WIS-p' class='stat-content'>5</p>
+                </div>
+                <div class='arrows stat-content'>
+                    <div class='arrow-button' onclick='plusStat("WIS-p")'>
+                        <div class='arrow arrow-up'></div>
+                    </div>
+                    <div class='arrow-button' onclick='minusStat("WIS-p")'>
+                        <div class='arrow arrow-down'></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charisma section -->
+            <div class='stat-section'>
+                <label name='CHA' id='CHA' class='stat-content'>Charisma:</label>
+                <div class='p-container'>
+                    <p id='CHA-p' class='stat-content'>5</p>
+                </div>
+                <div class='arrows stat-content'>
+                    <div class='arrow-button' onclick='plusStat("CHA-p")'>
+                        <div class='arrow arrow-up'></div>
+                    </div>
+                    <div class='arrow-button' onclick='minusStat("CHA-p")'>
+                        <div class='arrow arrow-down'></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+        
+
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>

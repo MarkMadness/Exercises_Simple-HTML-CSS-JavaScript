@@ -1,0 +1,101 @@
+
+
+h1, h2{
+    display: block;
+    text-align: center;
+    margin: 4px 0 0 0;
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondary-container{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 650px;
+}
+
+h3{
+    float: left;
+    padding: 0 30px 10px 30px;
+    font-size: 30pt;
+    min-width: 100px;
+}
+
+h4{
+    margin: 10px;
+    color: white;
+}
+
+.stat-section{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.stat-content{
+    float: left;
+}
+
+#STR, #DEX, #CON, #INT, #WIS, #CHA {
+    padding: 0 10px 0 10px;
+    width: 160px;
+    font-size: 18pt;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.p-container {
+    width: 60px;
+}
+
+#STR-p, #DEX-p, #CON-p, #INT-p, #WIS-p, #CHA-p {
+    padding: 0 10px 0 10px;
+    margin: 0 20px 0 2px;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 24pt;
+}
+
+/* Arrows */
+
+.arrows{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.arrow-button{
+    border: 1px solid black;
+    padding: 8px;
+    margin: 2px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-button:hover{
+    color: white;
+    background-color:rgb(150, 150, 150);
+    cursor: pointer;
+}
