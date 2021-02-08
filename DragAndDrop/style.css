@@ -1,28 +1,50 @@
 .example-parent {
-    border: 2px solid #DFA612;
-    color: black;
-    display: flex;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
-  
-  .example-origin {
-    flex-basis: 100%;
-    flex-grow: 1;
-    padding: 10px;
-  }
-  
-  .example-draggable {
-    background-color: #4AAE9B;
-    font-weight: normal;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  
-  .example-dropzone {
-    background-color: #6DB65B;
-    flex-basis: 100%;
-    flex-grow: 1;
-    padding: 10px;
-  }
+  border: 2px solid #DFA612;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 25%;
+}
+
+.example-origin {
+  width: 100%;
+  padding: 10px;
+}
+
+.draggable p {
+  background-color: #fbff00;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone-parent{
+  display: flex;
+  height: 100px;
+}
+
+.dropzone1, .dropzone2, .dropzone3, .dropzone4 {
+  background-color: #6DB65B;
+  width: 25%;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+}
+
+#button{
+  padding: 10px;
+  font-size: 16pt;
+  margin: 10px;
+}
+
+.result-body{
+  background-color: rgb(253, 107, 107);
+  display: inline;
+}
